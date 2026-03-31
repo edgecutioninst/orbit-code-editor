@@ -29,10 +29,11 @@ const MainPlaygroundPage = () => {
 
     const [activeRightPanel, setActiveRightPanel] = React.useState<"terminal" | "chat">("terminal");
 
-    const { playgroundData, templateData, isLoading, saveTemplateData, error } = usePlayground(id)
+    const { playgroundData, templateData: serverTemplateData, isLoading, saveTemplateData, error } = usePlayground(id)
 
     const {
         activeFileId,
+        templateData,
         closeAllFiles,
         openFile,
         openFiles,
@@ -56,13 +57,14 @@ const MainPlaygroundPage = () => {
 
     const lastSyncedContent = useRef<Map<string, string>>(new Map());
 
-
     useEffect(() => {
-        if (templateData && openFiles.length === 0) {
-            setTemplateData(templateData)
-        }
-    }, [templateData, openFiles.length, setTemplateData])
+    if (serverTemplateData && openFiles.length === 0) {
+        setTemplateData(serverTemplateData)
+    }
+}, [serverTemplateData, openFiles.length, setTemplateData])
 
+    
+    
     // wrapper functions that pass saveTemplateData 
     const wrappedHandleAddFile = useCallback(
         async (newFile: TemplateFile, parentPath: string) => {
