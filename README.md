@@ -1,8 +1,20 @@
-# 🪐 Orbit Editor
+# 🪐 Orbit IDE
 
-**Code with Intelligence.** A high-performance, browser-based Integrated Development Environment (IDE) featuring multi-language compilation, real-time AI assistance, and seamless GitHub integration. 
+**Code with Intelligence.**
+
+Orbit is a browser-based Integrated Development Environment (IDE) that combines multi-language code execution, AI-assisted development, GitHub integration, and cloud workspaces into a modern coding experience.
+
+Built with Next.js, Monaco Editor, Prisma, MongoDB, and Groq AI.
 
 [**🚀 View Live Deployment**](https://orbit-code-editor.vercel.app)
+
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![React](https://img.shields.io/badge/React-19-61dafb?logo=react)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)
+![Groq](https://img.shields.io/badge/Groq-AI-orange)
+![Monaco](https://img.shields.io/badge/Editor-Monaco-blue)
 
 ### 📸 Previews
 
@@ -13,11 +25,11 @@
 
 ## ✨ Key Features
 
-* **Multi-Language Compilation:** Write and execute code instantly in C++, Java, Python, Rust, Ruby, JavaScript, and TypeScript, powered by the JDoodle Execution API.
-* **Integrated AI Assistant:** Features an inline AI code helper (Copilot-style) and a conversational chatbot powered by Groq and the Vercel AI SDK to help debug and optimize code on the fly.
-* **GitHub Integration:** Seamlessly import and explore existing GitHub repositories directly within the browser environment.
-* **Workspace Management:** Create, update, delete, and organize multiple coding playgrounds with a robust file explorer and tabbed editor.
-* **Secure Authentication:** End-to-end secure login using GitHub and Google OAuth via NextAuth.js.
+* **⚡ Multi-Language Code Execution:** Write and execute code instantly in C++, Java, Python, Rust, Ruby, JavaScript, and TypeScript, powered by the JDoodle Execution API.
+* **🤖 AI Coding Assistant:** Features an inline AI code helper and a conversational chatbot powered by Groq and the Vercel AI SDK to help debug and optimize code on the fly.
+* **🐙 GitHub Repository Integration:** Seamlessly import and explore existing GitHub repositories directly within the browser environment.
+* **📁 Cloud Workspace Management** Create, update, delete, and organize multiple coding playgrounds with a robust file explorer and tabbed editor.
+* **🔐 Secure Authentication:** End-to-end secure login using GitHub and Google OAuth via NextAuth.js.
 
 ---
 
@@ -38,6 +50,9 @@
 **AI Integration**
 * **Provider:** Groq API
 * **Library:** Vercel AI SDK
+
+**Deployment**
+* **Vercel**
 
 ---
 
@@ -83,5 +98,10 @@ npx prisma db push
 npm run dev
 ```
 
+---
 
+## 💡 Why Orbit?
 
+Modern developers constantly switch between editors, AI assistants, terminals, GitHub, and online compilers.
+
+Orbit brings these tools together into a single browser-based workspace, allowing developers to write, execute, manage, and understand code without leaving the application.
