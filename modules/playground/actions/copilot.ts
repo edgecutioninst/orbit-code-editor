@@ -10,7 +10,7 @@ export async function getInlineCompletion(codeBeforeCursor: string, language: st
 
     try {
         const { text } = await generateText({
-            model: groq("llama-3.1-8b-instant"),
+            model: groq("openai/gpt-oss-20b"),
             system: `You are an expert ${language} coding assistant acting as an inline autocomplete (like GitHub Copilot). 
             The user will provide the code up to their cursor. 
             You must predict and provide ONLY the exact next logical characters or lines of code. 
